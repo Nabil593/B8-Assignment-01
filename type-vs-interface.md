@@ -1,10 +1,10 @@
 # Type Aliases vs Interfaces in TypeScript
 
-## 1. Introduction
+## Introduction
 
 TypeScript is a strongly typed programming language built on JavaScript. It helps developers write safer and more maintainable code. Type Aliases and Interfaces are two important features used to define the structure and shape of data. Although they look similar, they have some important differences.
 
-## 2. What is a Type Alias?
+## What is a Type Alias?
 
 A Type Alias allows us to create a custom name for a type. We can use it for primitive types, objects, unions, and more.
 
@@ -22,7 +22,7 @@ const user: User = {
 
 Here, `User` represents an object with two properties.
 
-## 3. What is an Interface?
+## What is an Interface?
 
 An Interface defines the structure that an object should follow. It is commonly used to describe objects and classes.
 
@@ -40,7 +40,7 @@ const student: Student = {
 
 The object must follow the structure defined by the interface.
 
-## 4. Core Differences
+## Core Differences
 
 Both Type Aliases and Interfaces can define object structures. However, a Type Alias can also represent union types.
 
@@ -50,10 +50,10 @@ type ID = string | number;
 
 Interfaces support declaration merging, which means multiple declarations with the same name can be combined. Both can also be extended, but they use different syntax: `extends` for interfaces and intersections (`&`) for type aliases.
 
-## 5. When Should You Use Each One?
+## When Should You Use Each One?
 
 Use an Interface when defining object structures, especially when working with classes or when declaration merging is useful. Use a Type Alias when working with unions, intersections, primitive types, or more complex type combinations.
 
-## 6. Conclusion
+## Conclusion
 
 Type Aliases and Interfaces are both useful TypeScript features. They have similar purposes but different capabilities. Understanding their differences helps developers choose the right option and write cleaner, more maintainable code.
